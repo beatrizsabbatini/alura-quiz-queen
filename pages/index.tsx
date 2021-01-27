@@ -48,9 +48,6 @@ export default function Home() {
             >
               <input
                 onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Diz ai seu nome"

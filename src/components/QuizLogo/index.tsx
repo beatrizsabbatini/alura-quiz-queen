@@ -11,12 +11,9 @@ import styled from 'styled-components';
 function Logo() {
   return (
     <LogoContainer>
-      <Image  
+      <LogoImage  
         src="/queen-logo.png"
         alt="Picture of the logo"
-        width={150}
-        height={150}
-        objectFit="contain"
       />
     </LogoContainer>
   );
@@ -28,6 +25,13 @@ const LogoContainer = styled.div`
   padding: 30px;
   border-radius: 100%;
   backdrop-filter: blur(10px);
+  margin-top: 50px;
+`
+
+const LogoImage = styled.img`
+  object-fit: contain;
+  height: 150px;
+  width: 150px;
 `
 
 const QuizLogo = styled(Logo)`
