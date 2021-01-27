@@ -9,7 +9,7 @@ import GitHubCorner from '../../src/components/GitHubCorner';
 
 interface ImageProps{
   src: string,
-  indice: number
+  indice?: number
 }
 
 interface Contributor{
@@ -31,7 +31,7 @@ export const QuizContainer = styled.div`
   }
 `;
 
-function Image({ src, indice }: ImageProps) {
+function Image({ src }: ImageProps) {
   const key = '191e83';
   const thumbnail = `
 https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cacheLimit=2
