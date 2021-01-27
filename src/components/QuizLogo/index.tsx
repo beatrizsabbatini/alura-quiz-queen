@@ -14,8 +14,8 @@ function Logo({ className }: LogoProps) {
       <Image  
         src="/queen-logo.png"
         alt="Picture of the logo"
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         objectFit="contain"
       />
     </LogoContainer>
