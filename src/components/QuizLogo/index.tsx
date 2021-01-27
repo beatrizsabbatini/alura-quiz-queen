@@ -4,11 +4,11 @@ import Image from 'next/image'
 import styled from 'styled-components';
 
 
-interface LogoProps{
-  className?: string
-}
+// interface LogoProps{
+//   className?: string
+// }
 
-function Logo({ className }: LogoProps) {
+function Logo() {
   return (
     <LogoContainer>
       <Image  
