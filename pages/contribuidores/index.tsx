@@ -7,6 +7,19 @@ import QuizBackground from '../../src/components/QuizBackground';
 import Footer from '../../src/components/Footer';
 import GitHubCorner from '../../src/components/GitHubCorner';
 
+interface ImageProps{
+  src: string,
+  indice: number
+}
+
+interface Contributor{
+  user: string,
+  projectUrl: string
+}
+interface ContributorsPageProps{
+  contributors: Contributor[]
+}
+
 export const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
@@ -18,7 +31,7 @@ export const QuizContainer = styled.div`
   }
 `;
 
-function Image({ src, indice }) {
+function Image({ src, indice }: ImageProps) {
   const key = '191e83';
   const thumbnail = `
 https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cacheLimit=2
@@ -36,7 +49,7 @@ https://api.screenshotmachine.com?key=${key}&url=${src}&dimension=1024x768&cache
   );
 }
 
-export default function ContributorsPage({ contributors }) {
+export default function ContributorsPage({ contributors }: ContributorsPageProps) {
   return (
     <QuizBackground backgroundImage="https://www.alura.com.br/assets/img/imersoes/react-2/fundo-do-mar-imersao-react-2-01.1609262503.svg">
       <QuizContainer style={{ margin: 'auto', padding: '5%', maxWidth: '1400px' }}>
@@ -58,7 +71,7 @@ export default function ContributorsPage({ contributors }) {
           }}
         >
           {
-            contributors.map(({ user, projectUrl }, indice) => (
+            contributors.map( ({user, projectUrl}, index: number) => (
               <Widget style={{ maxWidth: '400px' }}>
                 <Widget.Header style={{ alignItems: 'center' }}>
                   <img width="25" height="25" src={`https://github.com/${user}.png`} style={{ marginRight: '15px', borderRadius: '100%' }} />
@@ -70,7 +83,7 @@ export default function ContributorsPage({ contributors }) {
                   </h2>
                 </Widget.Header>
                 <Widget.Content style={{ padding: 0 }}>
-                  <Image indice={indice} src={projectUrl} />
+                  <Image indice={index} src={projectUrl} />
                 </Widget.Content>
               </Widget>
             ))
