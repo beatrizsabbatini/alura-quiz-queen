@@ -2,5 +2,5 @@
 
 Projeto de quiz de perguntas sobre a minha banda favorita, Queen!
 
-![Layout](https://github.com/beatrizsabbatini/alura-quiz-queen/blob/main/assets/layout.png)
+![Layout](https://github.com/beatrizsabbatini/alura-quiz-queen/blob/main/assets/layout.PNG)
 
