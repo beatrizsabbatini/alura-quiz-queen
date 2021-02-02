@@ -38,8 +38,23 @@ export default function Home() {
         <title>Queen Quiz</title>
       </Head>
       <QuizContainer>
-        <QuizLogo/>
-        <Widget>
+        <motion.div 
+          animate={{ scale: 1 }} 
+          initial={{ scale: 0 }} 
+          transition={{ duration: 0.5, delay: 1 }} 
+        >
+          <QuizLogo />
+        </motion.div>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Queen</h1>
           </Widget.Header>
@@ -58,22 +73,13 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Jogar`}
               </Button>
             </form>
           </Widget.Content>
-        </Widget>
+       
 
-        <Widget
-          as={motion.section}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          variants={{
-            show: { opacity: 1 },
-            hidden: { opacity: 0 },
-          }}
-          initial="hidden"
-          animate="show"
-        >
+       
           <Widget.Content>
             <h1>Quizes da Galera</h1>
 
@@ -87,19 +93,25 @@ export default function Home() {
 
                 return (
                   <li key={linkExterno}>
-                    <Widget.Topic
-                      as={Link}
-                      href={`/quiz/${projectName}___${githubUser}`}
-                    >
-                      {`${githubUser}/${projectName}`}
-                    </Widget.Topic>
+                    <Link href={`/quiz/${projectName}___${githubUser}`}>
+                      <Widget.Topic>
+                        {`${githubUser}/${projectName}`}
+                      </Widget.Topic>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <motion.div
+           initial={{ x: "-1000px" }}
+           animate={{ x: 0 }}
+           transition={{ duration: 0.5, delay: 1.5 }} 
+        >
+          <Footer />
+        </motion.div>
+        
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/beatrizsabbatini/alura-quiz-queen" />
     </QuizBackground>

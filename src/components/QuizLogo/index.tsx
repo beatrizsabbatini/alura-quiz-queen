@@ -2,11 +2,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-
-// interface LogoProps{
-//   className?: string
-// }
-
 function Logo() {
   return (
     <LogoContainer>
@@ -21,7 +16,7 @@ function Logo() {
 const LogoContainer = styled.div`
   background:  rgba(255, 255, 255, 0.5);
   width: fit-content;
-  padding: 30px;
+  padding: 25px;
   border-radius: 100%;
   backdrop-filter: blur(10px);
   margin-top: 50px;
@@ -29,8 +24,8 @@ const LogoContainer = styled.div`
 
 const LogoImage = styled.img`
   object-fit: contain;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
 `
 
 const QuizLogo = styled(Logo)`

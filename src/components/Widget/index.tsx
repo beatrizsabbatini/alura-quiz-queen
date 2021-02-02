@@ -64,6 +64,14 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+
+  &:link {
+    color: white
+  }
+
+  &:visited {
+    color: white;
+}
 `;
 
 export default Widget;

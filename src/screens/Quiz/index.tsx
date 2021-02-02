@@ -76,12 +76,11 @@ const ResultWidget: React.FC<ResultWidgetProps> = ({ results }) => {
 
             return (
               <li key={linkExterno}>
-                <Widget.Topic
-                  as={Link}
-                  href={`/quiz/${projectName}___${githubUser}`}
-                >
-                  {`${githubUser}/${projectName}`}
-                </Widget.Topic>
+                <Link href={`/quiz/${projectName}___${githubUser}`}>
+                  <Widget.Topic>
+                    {`${githubUser}/${projectName}`}
+                  </Widget.Topic>
+                </Link>
               </li>
             );
           })}
@@ -194,10 +193,11 @@ function QuestionWidget({
                 data-status={isQuestionSubmited && alternativeStatus}
               >
                 <input
-                  style={{ display: 'none' }}
+                  style={{display: 'none'}}
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
+                  checked={isSelected}
                   type="radio"
                 />
                 {alternative}
