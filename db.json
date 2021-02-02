@@ -4,30 +4,81 @@
   "description": "Teste os seus conhecimentos sobre a melhor banda de todas!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://media.giphy.com/media/bn86qaAWmQKZ2/giphy.gif",
+      "title": "Como Freddie Mercury morreu?",
+      "answer": 3,
+      "description": "Essa é fácil ein",
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Overdose",
+        "Suicidou-se enquanto estava bêbado e drogado",
+        "Tuberculose",
+        "Aids"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://media.giphy.com/media/YWlGAzJti8XIHamqKu/giphy.gif",
+      "title": "Qual é o último trecho da música Bohemian Rhapsody",
+      "answer": 2,
+      "description": "",
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "Nothing really matters to me",
+        "Doesn´t really matter",
+        "Anyway the wind blows",
+        "Nothing really matters to me, to me"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/1gUmaI66KHnNmfT1fQ/giphy.gif",
+      "title": "Qual foi a música que a platéia cantou no Brasil, que deixou a banda sem palavras?",
+      "answer": 0,
+      "description": "Qual será? 🤔",
+      "alternatives": [
+        "Love Of My Life",
+        "Killer Queen",
+        "We Are The Champions",
+        "We Will Rock You"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/mNrPDm7xDf6uc/giphy.gif",
+      "title": "Para quem Freddie escreveu Love Of My Life?",
+      "answer": 1,
+      "description": "E agora? Você sabe?",
+      "alternatives": [
+        "Seu ex-gerente (e amante) Paul Prenter",
+        "Sua ex-esposa Mary Austin",
+        "Sua mãe, Jer Bulsara",
+        "Nenhuma das alternativas"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/tKbvmsLPPRy84xft49/giphy.gif",
+      "title": "O guitarrista Brian May, possuia uma segunda profissão, qual era?",
+      "description": "Pegadinha ein",
+      "answer": 1,
+      "alternatives": [
+        "Professor de física",
+        "Astrofísico",
+        "Dentista",
+        "Biólogo"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/iKA7tfP3hK2jCPyV3F/giphy.gif",
+      "title": "Qual o nome da guitarra elétrica construída por Brian May?",
+      "description": "Só para os fãs",
+      "answer": 2,
+      "alternatives": [
+        "Lightning",
+        "Black Bolt",
+        "Red Special",
+        "Thunder Bolt"
       ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
